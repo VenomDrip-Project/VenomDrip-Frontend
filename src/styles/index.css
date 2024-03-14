@@ -46,13 +46,12 @@ code {
   font-display: swap;
 }
 
-:root {
-  --color-dark: #121214;
-  --color-light: #ffffff;
-  --color-dark-gray: #303030;
-  --color-light-gray: #d9d9d9;
-
-  --transition-duration: 0.2s;
+@font-face {
+  font-family: "poller-one";
+  src: url("../assets/fonts/PollerOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -165,4 +164,45 @@ label {
 
 legend {
   display: block;
+}
+
+:root {
+  --color-dark: #121214;
+  --color-light: #ffffff;
+  --color-dark-gray: #303030;
+  --color-light-gray: #d9d9d9;
+
+  --font-family-base: "dewi", sans-serif;
+
+  --transition-duration: 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "dewi";
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 51px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 31px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 19px;
 }

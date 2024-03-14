@@ -7,11 +7,13 @@ a {
   font-weight: 500;
 }
 
-.header {
+main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
+  justify-content: center;
 
-  background-color: var(--color-dark);
+  padding-inline: 5%;
+}
+
+.main-offer-wrapper {
+  background-image: url("../assets/img/offer.png");
 }
