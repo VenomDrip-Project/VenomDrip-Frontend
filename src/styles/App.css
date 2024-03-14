@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+a {
+  font-family: "dewi";
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+
+  background-color: var(--color-dark);
+}

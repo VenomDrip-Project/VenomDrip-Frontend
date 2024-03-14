@@ -1,0 +1,168 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+/* Reset and base styles  */
+
+@font-face {
+  font-family: "dewi";
+  src: url("../assets/fonts/RFDewi-ubold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dewi";
+  src: url("../assets/fonts/RFDewi-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dewi";
+  src: url("../assets/fonts/RFDewi-semibold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dewi";
+  src: url("../assets/fonts/RFDewi-regular.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-dark: #121214;
+  --color-light: #ffffff;
+  --color-dark-gray: #303030;
+  --color-light-gray: #d9d9d9;
+
+  --transition-duration: 0.2s;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-light-gray);
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
